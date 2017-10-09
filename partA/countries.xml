@@ -6,4 +6,144 @@
  * in Sochi, Russia.
  */
 <countries>
+    /* Country element template:
+    <country year="%1">
+        <name>%2</name>
+        <athletes>%3</athletes>
+        <medals>
+            <gold>%4</gold>
+            <silver>%5</silver>
+            <bronze>%6</bronze>
+        </medals>
+        <flagbearer sport="%7">
+            <lastname>%8</lastname>
+            <firstname>%9</firstname>
+        </flagbearer>
+    </country>
+    */
+    <country year="1924">
+        <name>Canada</name>
+        <athletes>206</athletes>
+        <medals>
+            <gold>14</gold>
+            <silver>7</silver>
+            <bronze>5</bronze>
+        </medals>
+        <flagBearer sport="Speed Skating">
+            <lastName>Hughes</lastName>
+            <firstName>Clara</firstName>
+        </flagBearer>
+    </country> 
+    <country year="1928">
+        <name>Estonia</name>
+        <athletes>30</athletes>
+        <medals>
+            <silver>1silver>
+        </medals>
+        <flagBearer sport="Biathlon">
+            <lastName>Lessing</lastName>
+            <firstName>Rolan</firstName>
+        </flagBearer>
+    </country>
+    <country year="1984">
+        <name>Senegal</name>
+        <athletes>1</athletes>
+        <medals />
+        <flagBearer sport="Alpine Skiing">
+            <lastName>Seck</lastName>
+            <firstName>Leyti</firstName>
+        </flagBearer>
+    </country>
+    <country year="1924">
+        <name>Great Britain</name>
+        <athletes>52</athletes>
+        <medals>
+            <gold>1</gold>
+        <flagBearer sport="Skeleton">
+            <lastName>Rudman</lastName>
+            <firstName>Shelly</firstName>
+        </flagBearer>
+    </country>
+    <country year="1896">
+        <name>Greece</name>
+        <athletes>7</athletes>
+        <medals />
+        <flagBearer sport="Biathlong">
+            <lastName>Tsakiris</lastName>
+            <firstName>Athanassios</firstName>
+        </flagBearer>
+    </country>
+    <country year="1936">
+        <name>Australia</name>
+        <athletes>40</athletes>
+        <medals>
+            <gold>2</gold>
+            <silver>1</silver>
+        </medals>
+        <flagBearer sport="Snowboard">
+            <lastName>Bright</lastName>
+            <firstName>Torah</firstName>
+        </flagBearer>
+    </country>
+    <country year="1928">
+        <name>Germany</name>
+        <athletes>153</athletes>
+        <medals>
+            <gold>10</gold>
+            <silver>13</silver>
+            <bronze>7</bronze>
+        </medals>
+        <flagBearer sport="Bobsleight">
+            <lastName>Lange</lastName>
+            <firstName>Andr&eacute;</firstName>
+        </flagBearer>
+    </country> 
+    <country year="1924">
+        <name>France</name>
+        <athletes>108</athletes>
+        <medals>
+            <gold>2</gold>
+            <silver>3</silver>
+            <bronze>6</bronze>
+        </medals>
+        <flagBearer sport="Biathlon">
+            <lastName>Defrasne</lastName>
+            <firstName>Vincent</firstName>
+        </flagBearer>
+    </country>
+    <country year="2010">
+        <name>Cayman Islands</name>
+        <athletes>1</athletes>
+        <medals />
+        <flagBearer sport="Alpine Skiing">
+            <lastName>Travers</lastName>
+            <firstName>Dow</firstName>
+        </flagBearer>
+    </country>
+    <country year="1956">
+        <name>Russia</name>
+        <athletes>177</athletes>
+        <medals>
+            <gold>3</gold>
+            <silver>5</silver>
+            <bronze>7</bronze>
+        </medals>
+        <flagBearer sport="Ice Hockey">
+            <lastName>Morozov</lastName>
+            <firstName>Aleksey</firstName>
+        </flagBearer>
+    </country>
+    <country year="1924">
+        <name>Sweden</name>
+        <athletes>106</athletes>
+        <medals>
+            <gold>5</gold>
+            <silver>2</silver>
+            <bronze>4</bronze>
+        </medals>
+        <flagBearer sport="Ice Hockey">
+            <lastName>Forsberg</lastName>
+            <firstName>Peter</firstName>
+        </flagBearer>
+    </country>
 </countries>
