@@ -72,7 +72,7 @@
         <name>Greece</name>
         <athletes>7</athletes>
         <medals />
-        <flagBearer sport="Biathlong">
+        <flagBearer sport="Biathlon">
             <lastName>Tsakiris</lastName>
             <firstName>Athanassios</firstName>
         </flagBearer>
@@ -84,7 +84,7 @@
             <gold>2</gold>
             <silver>1</silver>
         </medals>
-        <flagBearer sport="Snowboard">
+        <flagBearer sport="Snowboarding">
             <lastName>Bright</lastName>
             <firstName>Torah</firstName>
         </flagBearer>
@@ -97,7 +97,7 @@
             <silver>13</silver>
             <bronze>7</bronze>
         </medals>
-        <flagBearer sport="Bobsleight">
+        <flagBearer sport="Bobsleigh">
             <lastName>Lange</lastName>
             <firstName>André</firstName>
         </flagBearer>
