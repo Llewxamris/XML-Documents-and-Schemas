@@ -6,7 +6,9 @@
  - Description: Contains countries that participated in the 2014 Winter Olympics
  - in Sochi, Russia.
  --> 
-<countries>
+<countries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csdev.cegep-heritage.qc.ca/olympics ./Olympics.xsd"
+    xmlns="http://csdev.cegep-heritage.qc.ca/olympics">
     <!-- Country element template:
     <country year="%1">
         <name>%2</name>

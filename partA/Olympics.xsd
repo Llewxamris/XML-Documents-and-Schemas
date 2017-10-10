@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://csdev.cegep-heritage.qc.ca/olympics"
+xmlns="http://csdev.cegep-heritage.qc.ca/olympics">
+
+    <!-- Define `countries` element. -->
+    <xs:element name="countries">
+        <xs:complexType>
+           <xs:sequence>
+               <xs:element name="country" type="countryType" minOccurs="1"
+                    maxOccurs="unbounded" /> 
+           </xs:sequence> 
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Define `country` element. -->
+    <xs:complexType name="countryType">
+        <xs:group ref="countryElements" />
+        <xs:attributeGroup ref="countryAttributes" />
+    </xs:complexType>
+
+    <!-- Define the children of the `country` element. -->
+    <xs:group name="countryElements">
+       <xs:sequence>
+            <xs:element name="name" type="xs:string" /> 
+            <xs:element name="athletes" type="xs:integer" /> 
+            <xs:element name="medals" type="medalsType" /> 
+            <xs:element name="flagBearer" type="flagBearerType" /> 
+       </xs:sequence> 
+    </xs:group>
+
+    <!-- Define the attributes of the `country` element. -->
+    <xs:attributeGroup name="countryAttributes">
+        <xs:attribute name="year" type="xs:positiveInteger" />
+    </xs:attributeGroup>
+
+    <!-- Define `medals` element -->
+    <xs:complexType name="medalsType">
+        <xs:group ref="medalsElements" />
+    </xs:complexType>
+
+    <!-- Define the children of the `medals` element. -->
+    <xs:group name="medalsElements">
+        <xs:sequence>
+            <xs:element name="gold" type="xs:positiveInteger" minOccurs="0"
+                maxOccurs="1" />
+            <xs:element name="silver" type="xs:positiveInteger" minOccurs="0"
+                maxOccurs="1" />
+            <xs:element name="bronze" type="xs:positiveInteger" minOccurs="0"
+                maxOccurs="1" />
+        </xs:sequence> 
+    </xs:group>
+
+    <!-- Define the `flagBearer` element -->
+    <xs:complexType name="flagBearerType">
+        <xs:group ref="flagBearerElements" />
+        <xs:attributeGroup ref="flagBearerAttributes" />
+    </xs:complexType>
+
+    <!-- Define the children of the `flagBearer` element -->
+    <xs:group name="flagBearerElements">
+        <xs:sequence>
+            <xs:element name="lastName" type="xs:string" /> 
+            <xs:element name="firstName" type="xs:string" /> 
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Define the attributes of the `flagBearer` element -->
+    <xs:attributeGroup name="flagBearerAttributes">
+        <xs:attribute name="sport">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Alpine Skiing" />
+                <xs:enumeration value="Biathlon" />
+                <xs:enumeration value="Bobsleigh" />
+                <xs:enumeration value="Cross-country Skiing" />
+                <xs:enumeration value="Curling" />
+                <xs:enumeration value="Figure Skating" />
+                <xs:enumeration value="Freestyle Skiing" />
+                <xs:enumeration value="Ice Hockey" />
+                <xs:enumeration value="Luge" />
+                <xs:enumeration value="Nordic Combined" />
+                <xs:enumeration value="Short Track Speed Skating" />
+                <xs:enumeration value="Skeleton" />
+                <xs:enumeration value="Ski Jumping" />
+                <xs:enumeration value="Snowboarding" />
+                <xs:enumeration value="Speed Skating" />
+            </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+
+</xs:schema> 
