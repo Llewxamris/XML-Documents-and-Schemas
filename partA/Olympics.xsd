@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 targetNamespace="http://csdev.cegep-heritage.qc.ca/olympics"
-xmlns="http://csdev.cegep-heritage.qc.ca/olympics">
+xmlns="http://csdev.cegep-heritage.qc.ca/olympics"
+elementFormDefault="qualified">
+
+<!-- Olympics.xsd
+ - Author: Maxwell Haley
+ - Date created: 2017-10-09
+ - Description: Schema to validate the `countries.xml` file.
+ --> 
 
     <!-- Define `countries` element. -->
     <xs:element name="countries">
