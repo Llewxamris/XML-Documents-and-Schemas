@@ -3,31 +3,61 @@
  * Name: Maxwell Haley
  * Date: 2017-10-10
  */
-actor {
+
+ @namespace act url(./actors.xml);
+
+act|actor {
 	display: block; 
 	font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20pt;
 }
 
-name, date   {
+act|name, act|date   {
 	display: block;
 }
 
-name {
+act|name {
 	font-size: 14pt; 
 	color: DarkRed; 
 	font-style: bold;
 }
 
-date, birthplace   {
+act|date, act|birthplace   {
 	display: inline; 
 	font-style: italic; 
 	color: DarkRed;
 }
 
-birthplace {
+act|birthplace {
 	padding-left: 0.5em;
 }
 
 
 /* place namespace escape style below */
+
+act\:actor {
+	display: block; 
+	color:green;
+	font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20pt;
+}
+
+act\:name, act\:date   {
+	display: block;
+}
+
+act\:name {
+	font-size: 14pt; 
+	color: DarkRed; 
+	font-style: bold;
+}
+
+act\:date, act\:birthplace   {
+	display: inline; 
+	font-style: italic; 
+	color: DarkRed;
+}
+
+act\:birthplace {
+	padding-left: 0.5em;
+}

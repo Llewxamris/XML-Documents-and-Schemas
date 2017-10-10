@@ -3,23 +3,41 @@
  * Name: Maxwell Haley
  * Date: 2017-10-10
  */
+@namespace mov url(./movies.xml);
 
-movie {
+mov|movie {
 	display:block; 
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-name, date, length  {
+mov|name, mov|date, mov|length  {
 	display: inline;
 }
 
-name {
+mov|name {
 	font-style: bold;
 }
 
-length {
+mov|length {
 	font-style: italics; 
 	padding-left: 0.5em;
 }
 
 /* place namespace escape style below */
+mov\:movie {
+	display:block; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+mov\:name, mov\:date, mov\:length  {
+	display: inline;
+}
+
+mov\:name {
+	font-style: bold;
+}
+
+mov\:length {
+	font-style: italics; 
+	padding-left: 0.5em;
+}
