@@ -3,7 +3,7 @@
  * Name: Maxwell Haley
  * Date: 2017-10-10
  */
-@namespace mov url(./movies.xml);
+@namespace mov url(http://csdev.cegep-heritage.qc.ca/movies);
 
 mov|movie {
 	display:block; 

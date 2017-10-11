@@ -4,7 +4,7 @@
  * Date: 2017-10-10
  */
 
- @namespace act url(./actors.xml);
+ @namespace act url(http://csdev.cegep-heritage.qc.ca/actors);
 
 act|actor {
 	display: block; 
@@ -37,7 +37,6 @@ act|birthplace {
 
 act\:actor {
 	display: block; 
-	color:green;
 	font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20pt;
 }
