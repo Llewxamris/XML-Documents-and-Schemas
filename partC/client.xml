@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
-<clients>
+<clients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csdev.cegep-heritage.qc.ca/client ./client.xsd"
+    xmlns="http://csdev.cegep-heritage.qc.ca/client">
 	<client clientId="3">
 		<clientName>Alden Books</clientName>
 		<contactLastName>Hood</contactLastName>
@@ -37,7 +39,7 @@
 		<clientStreet>62 Adams</clientStreet>
 		<clientCity>Maniwaki</clientCity>
 		<clientProvince>QC</clientProvince>
-		<clientPostalCode>J8Y 8T3</clientPostalCode>
+		<clientPostalCode>J8Y8T3</clientPostalCode>
 		<clientDiscount>0.05</clientDiscount>
 	</client>
 	<client clientId="7">
