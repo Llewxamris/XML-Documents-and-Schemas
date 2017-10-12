@@ -1,6 +1,9 @@
 <?xml version="1.0" ?>
 
-<equipmentList>
+<equipmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://csdev.cegep-heritage.qc.ca/equipment ./equip.xsd"
+    xmlns="http://csdev.cegep-heritage.qc.ca/equipment">
+
   <equipment equipmentNumber="2">
     <equipmentName>Mertz</equipmentName>
     <inserviceDate>2011-01-23</inserviceDate>
@@ -15,7 +18,7 @@
   </equipment>
   <equipment equipmentNumber="4">
     <equipmentName>Rambo</equipmentName>
-    <inserviceDate>2011-01-23</inserviceDate>
+    <inserviceDate>2012-01-23</inserviceDate>
     <clientId>3</clientId>
     <equipmentType>PC</equipmentType>
   </equipment>
@@ -41,7 +44,7 @@
     <equipmentName>Bradbury</equipmentName>
     <inserviceDate>2011-09-02</inserviceDate>
     <clientId>5</clientId>
-    <equipmentType>PO</equipmentType>
+    <equipmentType>PR</equipmentType>
   </equipment>
   <equipment equipmentNumber="9">
     <equipmentName>Frag</equipmentName>
@@ -165,7 +168,7 @@
   </equipment>
   <equipment equipmentNumber="29">
     <equipmentName>Mantay Ray</equipmentName>
-    <inserviceDate>2012-09-31</inserviceDate>
+    <inserviceDate>2012-09-30</inserviceDate>
     <clientId>11</clientId>
     <equipmentType>SC</equipmentType>
   </equipment>
