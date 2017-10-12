@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    background-color: #fafafa;
+    color: #555555;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+}
+
+#header {
+    text-align: center;
+    line-height: 1em;
+}
+
+.label {
+    color: blue;
+}

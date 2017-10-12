@@ -10,14 +10,16 @@
         <html>
             <head>
                 <title>Invoice - <xsl:value-of select="//client/Client_Name" /></title>
-                <link href="." rel="stylesheet" type="text/css" />
+                <link href="./invoice.css" rel="stylesheet" type="text/css" />
             </head>
             <body>
-                <h1>Happy Valley Programmers, Inc.</h1>
-                <p>Transactions for Invoice No. 
-                    <xsl:value-of select="//info/@invoice_number" />
-                </p>
-                <p>Date: <xsl:value-of select="//info/invoice_date" /></p>
+                <div id="header">
+                    <h1>Happy Valley Programmers, Inc.</h1>
+                    <p>Transactions for Invoice No. 
+                        <xsl:value-of select="//info/@invoice_number" />
+                    </p>
+                    <p>Date: <xsl:value-of select="//info/invoice_date" /></p>
+                </div>
                 <div id="clientInformation">
                     <xsl:apply-templates select="//client" />
                 </div>
