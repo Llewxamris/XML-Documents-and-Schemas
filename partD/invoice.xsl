@@ -38,24 +38,26 @@
 
     <xsl:template match="//client">
         <p>
-            <span class="label">Client: </span>
-            <xsl:value-of select="Client_Name" />
-        </p>
-        <p>
+            <span class="infoField">
+                <span class="label">Client: </span>
+                <xsl:value-of select="Client_Name" />
+            </span>
+            <span class="infoField">
             <span class="label">Contact: </span>
-            <xsl:value-of select="Contact_Firstname" />
-            <xsl:text> </xsl:text> <!-- This field left blank. -->
-            <xsl:value-of select="Contact_Lastname" />
-        </p>
-        <p>
-            <span class="label">Address: </span>
-            <xsl:value-of select="Client_Street" />
-        </p>
-        <p>
-            <xsl:value-of select="Client_City" />
-        </p>
-        <p>
-            <xsl:value-of select="Client_Postalcode" />
+                <xsl:value-of select="Contact_Firstname" />
+                <xsl:text> </xsl:text> <!-- This field left blank. -->
+                <xsl:value-of select="Contact_Lastname" />
+            </span>
+            <span class="infoField">
+                <span class="label">Address: </span>
+                <xsl:value-of select="Client_Street" />
+                <xsl:text>.</xsl:text>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="Client_City" />
+                <xsl:text>,</xsl:text>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="Client_Postalcode" />
+            </span>
         </p>
     </xsl:template>
 
